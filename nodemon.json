@@ -1,0 +1,5 @@
+{
+  "ext": "*.js",
+  "verbose": true,
+  "exec": "standard --fix && node index.js"
+}
