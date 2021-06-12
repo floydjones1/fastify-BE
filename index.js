@@ -9,6 +9,7 @@ const start = async () => {
     await fastify.listen(3000)
     fastify.log.info('started server')
   } catch (err) {
+    console.error(err)
     process.exit(1)
   }
 }

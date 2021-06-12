@@ -8,16 +8,16 @@ fastify.get('/', async (request, reply) => {
 
 const opts = {
   schema: {
-    querystring: { 
+    querystring: {
       id: { type: 'string' }
     },
     body: {
       type: 'object',
-      required: [ 'name' ],
+      required: ['name'],
       properties: {
         name: { type: 'string' },
-        type: { type: 'number' },
-      },
+        type: { type: 'number' }
+      }
     },
     response: {
       200: {
